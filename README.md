@@ -1,6 +1,6 @@
 # display-api-mock
 
-Api mock for OS2Display.
+Api mock for OS2Display based on json-server: https://github.com/typicode/json-server.
 
 ## Setup
 
