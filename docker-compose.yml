@@ -1,0 +1,40 @@
+version: "3.4"
+
+networks:
+  frontend:
+    external: true
+  app:
+    driver: bridge
+    internal: false
+
+services:
+  nginx:
+    image: nginx:latest
+    networks:
+      - app
+      - frontend
+    depends_on:
+      - json-server
+    ports:
+      - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=frontend"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_DOMAIN}`)"
+
+  json-server:
+    image: node:14
+    environment:
+      - NODE_ENV=development
+      - DEBUG=*
+    command: npm start
+    networks:
+      - app
+    ports:
+      - '3000'
+    working_dir: /app
+    volumes:
+      - .:/app:delegated
