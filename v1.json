@@ -903,11 +903,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/book-review.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/book-review.css"
           }
         ],
         "options": {
@@ -930,11 +930,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/calendar.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/calendar.css"
           }
         ],
         "options": {
@@ -984,11 +984,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/meeting-room-schedule.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/meeting-room-schedule.css"
           }
         ],
         "options": {
@@ -1011,11 +1011,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/poster.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/poster.css"
           }
         ],
         "options": {
@@ -1038,11 +1038,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/quote.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/quote.css"
           }
         ],
         "options": {
@@ -1065,11 +1065,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/rss.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/rss.css"
           }
         ],
         "options": {
@@ -1092,11 +1092,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/slideshow.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/slideshow.css"
           }
         ],
         "options": {
@@ -1119,11 +1119,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/sparkle.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/sparkle.css"
           }
         ],
         "options": {
