@@ -957,11 +957,11 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "http://templates.itkdev.dk/image/image.js",
+        "component": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/image-text.bundle.js",
         "assets": [
           {
             "type": "css",
-            "url": "http://templates.itkdev.dk/image/image.css"
+            "url": "https://raw.githubusercontent.com/os2display/display-templates/develop/build/image-text.css"
           }
         ],
         "options": {
