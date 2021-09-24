@@ -2309,17 +2309,21 @@
             "phone": "12341234",
             "email": "mail@mail.dk",
             "id": "uniqueContact1",
-            "image": {
-              "id": "uniqueMedia6",
-              "url": "./fixtures/images/author.jpg"
+            "media": {
+              "image": {
+                "id": "uniqueMedia6",
+                "url": "./fixtures/images/author.jpg"
+              }
             }
           },
           {
             "title": "Forstander",
             "name": "Janitor",
-            "image": {
-              "id": "uniqueMedia6",
-              "url": "./fixtures/images/author.jpg"
+            "media": {
+              "image": {
+                "id": "uniqueMedia6",
+                "url": "./fixtures/images/author.jpg"
+              }
             },
             "phone": "12341234",
             "email": "mail@mail.dk",
@@ -2329,9 +2333,11 @@
             "title": "Lady",
             "name": "Dr. Cox",
             "phone": "12341234",
-            "image": {
-              "id": "uniqueMedia6",
-              "url": "./fixtures/images/author.jpg"
+            "media": {
+              "image": {
+                "id": "uniqueMedia6",
+                "url": "./fixtures/images/author.jpg"
+              }
             },
             "email": "mail@mail.dk",
             "id": "uniqueContact3"
