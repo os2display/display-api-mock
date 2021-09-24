@@ -127,6 +127,10 @@
     {
       "playlistId": "29ff6eca-8778-6789-bfeb-53e4bf000090",
       "slideId": "a97f6ec4-5278-4993-bfeb-53cded000040"
+    },
+    {
+      "playlistId": "01FG6KPFQW10XP484T9ND69VFG",
+      "slideId": "a97f6ec4-5278-4993-bfeb-53cded000041"
     }
   ],
   "playlistScreenRegion": [
@@ -288,6 +292,11 @@
     {
       "playlistId": "29ff6eca-8778-6789-bfeb-53e4bf000090",
       "screenId": "497f6eca-6276-1596-bfeb-53ceb4000029",
+      "region": "region1"
+    },
+    {
+      "playlistId": "01FG6KPFQW10XP484T9ND69VFG",
+      "screenId": "497f6eca-6276-1596-bfeb-53ceb4000030",
       "region": "region1"
     }
   ],
@@ -886,6 +895,23 @@
         "from": "2021-09-17T10:15:51.480Z",
         "to": null
       }
+    },
+    {
+      "id": "01FG6KPFQW10XP484T9ND69VFG",
+      "@context": "/contexts/Playlist",
+      "@id": "/v1/playlists/01FG6KPFQW10XP484T9ND69VFG",
+      "title": "New playlist contacts",
+      "description": "123",
+      "modified": "2021-09-17T10:15:51.480Z",
+      "created": "2021-09-17T10:15:51.480Z",
+      "modifiedBy": "TODO",
+      "createdBy": "TODO",
+      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=01FG6KPFQW10XP484T9ND69VFG",
+      "onScreens": "/v1/playlists/01FG6KPFQW10XP484T9ND69VFG/screens",
+      "published": {
+        "from": "2021-09-17T10:15:51.480Z",
+        "to": null
+      }
     }
   ],
   "templates": [
@@ -1111,6 +1137,33 @@
       "templateKey": "template-sparkle",
       "title": "Sparkle",
       "description": "This is a template for sparkle",
+      "modified": "2021-09-03T10:04:59Z",
+      "created": "2021-08-21T11:22:00Z",
+      "modifiedBy": "Jens Jensen",
+      "createdBy": "Ole Olensen",
+      "icon": "http://templates.itkdev.dk/image/icon.png",
+      "resources": {
+        "admin": "http://templates.itkdev.dk/image/form.json",
+        "schema": "http://templates.itkdev.dk/image/schema.json",
+        "component": "http://templates.itkdev.dk/image/image.js",
+        "assets": [
+          {
+            "type": "css",
+            "url": "http://templates.itkdev.dk/image/image.css"
+          }
+        ],
+        "options": {
+          "fade": true
+        },
+        "content": {}
+      }
+    },
+    {
+      "id": "457d6ecb-6378-4299-bfcb-53cbaaaa6f17",
+      "@id": "/v1/template/457d6ecb-6378-4299-bfcb-53cbaaaa6f17",
+      "templateKey": "template-contacts",
+      "title": "Contacts",
+      "description": "Contacts",
       "modified": "2021-09-03T10:04:59Z",
       "created": "2021-08-21T11:22:00Z",
       "modifiedBy": "Jens Jensen",
@@ -2229,6 +2282,89 @@
           }
         ]
       }
+    },
+    {
+      "id": "a97f6ec4-5278-4993-bfeb-53cded000041",
+      "@context": "/contexts/Slide",
+      "@id": "/v1/slides/a97f6ec4-5278-4993-bfeb-53cded000041",
+      "title": "Contacts",
+      "description": "This is the first slide named one",
+      "modified": "2012-09-03T12:21:56Z",
+      "created": "2021-09-01T10:04:00Z",
+      "modifiedBy": "Ole Olesen",
+      "createdBy": "Jens Jensen",
+      "template": {
+        "@id": "/v1/templates/457d6ecb-6378-4299-bfcb-53cbaaaa6f17",
+        "options": []
+      },
+      "onScreens": "/v1/screens?slideId=a97f6ec4-5278-4993-bfeb-53cded000041",
+      "onPlaylists": "/v1/playlists?slideId=a97f6ec4-5278-4993-bfeb-53cded000041",
+      "published": 1622555123,
+      "duration": 300000,
+      "content": {
+        "contacts": [
+          {
+            "title": "Pedel",
+            "name": "John Michael Dorian",
+            "phone": "12341234",
+            "email": "mail@mail.dk",
+            "id": "uniqueContact1",
+            "media": {
+              "image": {
+                "id": "uniqueMedia6",
+                "url": "./fixtures/images/author.jpg"
+              }
+            }
+          },
+          {
+            "title": "Forstander",
+            "name": "Janitor",
+            "media": {
+              "image": {
+                "id": "uniqueMedia6",
+                "url": "./fixtures/images/author.jpg"
+              }
+            },
+            "phone": "12341234",
+            "email": "mail@mail.dk",
+            "id": "uniqueContact2"
+          },
+          {
+            "title": "Lady",
+            "name": "Dr. Cox",
+            "phone": "12341234",
+            "media": {
+              "image": {
+                "id": "uniqueMedia6",
+                "url": "./fixtures/images/author.jpg"
+              }
+            },
+            "email": "mail@mail.dk",
+            "id": "uniqueContact3"
+          },
+          {
+            "name": "Dr. Cox",
+            "phone": "12341234",
+            "email": "mail@mail.dk",
+            "id": "uniqueContact3"
+          },
+          {
+            "name": "Dr. Cox",
+            "phone": "12341234",
+            "email": "mail@mail.dk",
+            "id": "uniqueContact4"
+          },
+          {
+            "name": "Dr. Cox",
+            "phone": "12341234",
+            "email": "mail@mail.dk",
+            "id": "uniqueContact5"
+          }
+        ],
+        "styling": {
+          "separator": true
+        }
+      }
     }
   ],
   "screens": [
@@ -2909,6 +3045,28 @@
         "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000029&region=region1"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000029/groups",
+      "modified": "2021-09-21T14:02:00Z",
+      "created": "2021-07-21T10:25:00Z",
+      "modifiedBy": "Jens Jensen",
+      "createdBy": "Ole Olesen"
+    },
+    {
+      "id": "497f6eca-6276-1596-bfeb-53ceb4000030",
+      "@context": "/contexts/Screen",
+      "@id": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000030",
+      "title": "Screen Fixture 32 - contacts",
+      "description": "This is a screen with contacts",
+      "size": 50,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
+      "location": "M2.3",
+      "regions": [
+        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000030&region=region1"
+      ],
+      "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000030/groups",
       "modified": "2021-09-21T14:02:00Z",
       "created": "2021-07-21T10:25:00Z",
       "modifiedBy": "Jens Jensen",
