@@ -1,4 +1,5 @@
-const jsonServer = require('json-server');
+import fetch from 'node-fetch';
+import jsonServer from 'json-server';
 
 const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
@@ -37,6 +38,27 @@ const hydraRender = (req, res) => {
     res.jsonp(data);
   }
 };
+
+async function getFromApi(path) {
+  const response = await fetch(`http://nginx/api/${path}`);
+  return await response.json();
+}
+
+server.use('/v1/playlists/:playlistId/slides', (req, res) => {
+  getFromApi(`v1/slidesPlaylist?_expand=slide&playlist=${req.param.playlistId}`).then(
+    (data) => res.send(data)
+  ).catch((e) => {
+    console.error(e)
+  })
+});
+
+server.use('/v1/screens/:screenId/region/:regionId/playlists', (req, res) => {
+  getFromApi(`/v1/playlistScreenRegion?_expand=playlist&screen=${req.params.screenId}&region=${req.params.regionId}`).then(
+    (data) => res.send(data)
+  ).catch((e) => {
+    console.error(e)
+  })
+});
 
 v1Router.render = hydraRender;
 

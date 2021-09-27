@@ -311,7 +311,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000057",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000057/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000057/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -328,7 +328,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000058",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000058/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000058/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -345,7 +345,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000061",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000061/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000061/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -362,7 +362,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000062",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000062/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000062/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -379,7 +379,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000063",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000063/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000063/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -396,7 +396,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000064",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000064/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000064/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -413,7 +413,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000065",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000065/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000065/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -430,7 +430,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000066",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000066/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000066/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -447,7 +447,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000067",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000067/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000067/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -464,7 +464,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000068",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000068/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000068/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -481,7 +481,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000069",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000069/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000069/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -498,7 +498,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000070",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000070/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000070/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -515,7 +515,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000071",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000071/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000071/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -532,7 +532,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000072",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000072/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000072/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -549,7 +549,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000073",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000073/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000073/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -566,7 +566,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000074",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000074/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000074/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -583,7 +583,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000075",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000075/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000075/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -600,7 +600,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000076",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000076/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000076/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -617,7 +617,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000077",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000077/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000077/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -634,7 +634,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000078",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000078/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000078/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -651,7 +651,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000079",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000079/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000079/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -668,7 +668,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000080",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000080/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000080/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -685,7 +685,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000081",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000081/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000081/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -702,7 +702,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000082",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000082/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000082/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -719,7 +719,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000083",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000083/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000083/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -736,7 +736,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000084",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000084/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000084/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -753,7 +753,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000085",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000085/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000085/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -770,7 +770,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000086",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000086/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000086/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -787,7 +787,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000087",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000087/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000087/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -804,7 +804,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000088",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000088/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000088/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -821,7 +821,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000089",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000089/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000089/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -838,7 +838,7 @@
       "created": "2021-09-21T17:00:01Z",
       "modifiedBy": "Jens Jensen",
       "createdBy": "Ole Olesen",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=29ff6eca-8778-6789-bfeb-53e4bf000090",
+      "slides": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000090/slides",
       "onScreens": "/v1/playlists/29ff6eca-8778-6789-bfeb-53e4bf000090/screens",
       "published": {
         "from": "2021-09-21T17:00:01Z",
@@ -855,7 +855,7 @@
       "created": "2021-09-17T10:13:23.356Z",
       "modifiedBy": "TODO",
       "createdBy": "TODO",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=01FFSKY5RW76HVM95EJKFQY3PN",
+      "slides": "/v1/playlists/01FFSKY5RW76HVM95EJKFQY3PN/slides",
       "onScreens": "/v1/playlists/01FFSKY5RW76HVM95EJKFQY3PN/screens",
       "published": {
         "from": "2021-09-17T10:13:23.356Z",
@@ -872,7 +872,7 @@
       "created": "2021-09-17T10:14:42.912Z",
       "modifiedBy": "TODO",
       "createdBy": "TODO",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=01FFSM0KF0F2PP1BZ2T7KY4G56",
+      "slides": "/v1/playlists/01FFSM0KF0F2PP1BZ2T7KY4G56/slides",
       "onScreens": "/v1/playlists/01FFSM0KF0F2PP1BZ2T7KY4G56/screens",
       "published": {
         "from": "2021-09-17T10:14:42.912Z",
@@ -889,7 +889,7 @@
       "created": "2021-09-17T10:15:51.480Z",
       "modifiedBy": "TODO",
       "createdBy": "TODO",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=01FFSM2PDRH8YM877YHMKXF5VN",
+      "slides": "/v1/playlists/01FFSM2PDRH8YM877YHMKXF5VN/slides",
       "onScreens": "/v1/playlists/01FFSM2PDRH8YM877YHMKXF5VN/screens",
       "published": {
         "from": "2021-09-17T10:15:51.480Z",
@@ -906,7 +906,7 @@
       "created": "2021-09-17T10:15:51.480Z",
       "modifiedBy": "TODO",
       "createdBy": "TODO",
-      "slides": "/v1/slidesPlaylist?_expand=slide&playlistId=01FG6KPFQW10XP484T9ND69VFG",
+      "slides": "/v1/playlists/01FG6KPFQW10XP484T9ND69VFG/slides",
       "onScreens": "/v1/playlists/01FG6KPFQW10XP484T9ND69VFG/screens",
       "published": {
         "from": "2021-09-17T10:15:51.480Z",
@@ -2382,7 +2382,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb43a6f54&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb43a6f54/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb43a6f54/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2404,7 +2404,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000000&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000000/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000000/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2426,7 +2426,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000001&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000001/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000001/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2448,7 +2448,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000002&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000002/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000002/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2470,7 +2470,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000003&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000003/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000003/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2492,7 +2492,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000004&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000004/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000004/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2514,7 +2514,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000005&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000005/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000005/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2536,7 +2536,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000006&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000006/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000006/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2558,7 +2558,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000007&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000007/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000007/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2580,7 +2580,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000008&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000008/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000008/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2602,7 +2602,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000009&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000009/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000009/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2624,7 +2624,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000010&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000010/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000010/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2646,7 +2646,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000011&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000011/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000011/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2668,7 +2668,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000012&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000012/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000012/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2690,7 +2690,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000013&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000013/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000013/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2712,7 +2712,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000014&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000014/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000014/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2734,7 +2734,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000015&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000015/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000015/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2756,7 +2756,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000016&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000016/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000016/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2778,7 +2778,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000017&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000017/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000017/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2800,7 +2800,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000018&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000018/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000018/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2822,7 +2822,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000019&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000019/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000019/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2844,7 +2844,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000020&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000020/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000020/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2866,7 +2866,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000021&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000021/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000021/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2888,7 +2888,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000022&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000022/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000022/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2910,7 +2910,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000023&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000023/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000023/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2932,7 +2932,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000024&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000024/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000024/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2954,7 +2954,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000025&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000025/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000025/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2976,7 +2976,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000026&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000026/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000026/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -2998,7 +2998,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000027&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000027/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000027/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -3020,7 +3020,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000028&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000028/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000028/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -3042,7 +3042,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000029&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000029/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000029/groups",
       "modified": "2021-09-21T14:02:00Z",
@@ -3064,7 +3064,7 @@
       "layout": "/v1/layouts/497f6ecf-642-4883-cfeb-53cbf3bf82a0",
       "location": "M2.3",
       "regions": [
-        "/v1/playlistScreenRegion?_expand=playlist&screenId=497f6eca-6276-1596-bfeb-53ceb4000030&region=region1"
+        "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000030/region/region1/playlists"
       ],
       "inScreenGroups": "/v1/screens/497f6eca-6276-1596-bfeb-53ceb4000030/groups",
       "modified": "2021-09-21T14:02:00Z",
