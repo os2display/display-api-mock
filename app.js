@@ -52,51 +52,78 @@ const hydraRender = (req, res) => {
 server.use('/v1/slides/:slideId/playlists', (req, res) => {
   getFromApi(`v1/slidesPlaylist?_expand=playlist&slideId=${req.params.slideId}`).then(
     (data) => res.send(data)
-  ).catch((e) => {
-    console.error(e)
-  })
+  ).catch((e) => res.send(e));
 });
 
 server.use('/v1/playlists/:playlistId/slides', (req, res) => {
   getFromApi(`v1/slidesPlaylist?_expand=slide&playlistId=${req.params.playlistId}`).then(
     (data) => res.send(data)
-  ).catch((e) => {
-    console.error(e)
-  })
+  ).catch((e) => res.send(e));
 });
 
 server.use('/v1/playlists/:playlistId/screens', (req, res) => {
   getFromApi(`/v1/playlistScreenRegion?_expand=screen&playlistId=${req.params.playlistId}`).then(
     (data) => res.send(data)
-  ).catch((e) => {
-    console.error(e)
-  })
+  ).catch((e) => res.send(e));
 });
 
 server.put('/v1/screens/:screenId/region/:regionId/playlists/:playlistId', (req, res) => {
+  // @TODO: Avoid duplicates.
+
   sendPostToApi('/v1/playlistScreenRegion/', {
-    "playlistId": req.params.playlistId,
-    "screenId": req.params.screenId,
-    "region": req.params.regionId
-  }).then(res.send(201)).catch((e) => console.error(e));
+    playlistId: req.params.playlistId,
+    screenId: req.params.screenId,
+    region: req.params.regionId
+  }).then(() => {
+    res.send(201);
+  }).catch((e) => res.send(e));
 });
 
 server.delete('/v1/screens/:screenId/region/:regionId/playlists/:playlistId', (req, res) => {
-  console.log(req.method);
-  res.send('@TODO: Implement DELETE');
+  getFromApi(`/v1/playlistScreenRegion?screenId=${req.params.screenId}&region=${req.params.regionId}&playlistId=${req.params.playlistId}`).then(
+    (data) => {
+      if (data['hydra:member']?.length > 0) {
+        sendDeleteToApi(`/v1/playlistScreenRegion/${data['hydra:member'][0].id}`).then(
+          res.send(204)
+        ).catch((e) => res.send(e));
+      }
+      else {
+        res.send(404);
+      }
+    }
+  ).catch((e) => res.send(e));
 });
 
 server.use('/v1/screens/:screenId/region/:regionId/playlists', (req, res) => {
   getFromApi(`/v1/playlistScreenRegion?_expand=playlist&screenId=${req.params.screenId}&region=${req.params.regionId}`).then(
     (data) => res.send(data)
-  ).catch((e) => {
-    console.error(e)
-  })
+  ).catch((e) => res.send(e));
 });
 
-// @TODO: Handle PUT and DELETE.
-server.use('/v1/playlists/:playlistId/slide/:slideId', (req, res) => {
-  res.send('@TODO: Implement PUT and DELETE');
+server.put('/v1/playlists/:playlistId/slide/:slideId', (req, res) => {
+  // @TODO: Avoid duplicates.
+
+  sendPostToApi('/v1/slidesPlaylist', {
+    playlistId: req.params.playlistId,
+    slideId: req.params.slideId,
+  }).then(() => {
+    res.send(201);
+  }).catch((e) => res.send(e));
+});
+
+server.delete('/v1/playlists/:playlistId/slide/:slideId', (req, res) => {
+  getFromApi(`/v1/slidesPlaylist?playlistId=${req.params.playlistId}&slideId=${req.params.slideId}`).then(
+    (data) => {
+      if (data['hydra:member']?.length > 0) {
+        sendDeleteToApi(`/v1/slidesPlaylist/${data['hydra:member'][0].id}`).then(
+          res.send(204)
+        ).catch((e) => res.send(e));
+      }
+      else {
+        res.send(404);
+      }
+    }
+  ).catch((e) => res.send(e));
 });
 
 async function getFromApi(path) {
@@ -104,9 +131,13 @@ async function getFromApi(path) {
   return await response.json();
 }
 
-async function sendPostToApi(path) {
+async function sendPostToApi(path, data) {
   const response = await fetch(`http://nginx/api/${path}`, {
-    method: 'POST'
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
   });
   return await response.json();
 }
