@@ -24,7 +24,9 @@ const addHydra = (data, path, query) => {
       i < Math.min(page * itemsPerPage, data.length);
       i += 1
     ) {
-      currentItems.push(data[i]);
+      const newItem = { ...data[i] };
+      delete newItem.id;
+      currentItems.push(newItem);
     }
 
     const itemsPerPageQuery =
@@ -52,7 +54,10 @@ const addHydra = (data, path, query) => {
 
     return result;
   }
-  return data;
+
+  const newData = { ...data };
+  delete newData.id;
+  return newData;
 };
 
 const hydraRender = (req, res) => {
