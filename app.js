@@ -1,164 +1,204 @@
-import fetch from 'node-fetch';
-import jsonServer from 'json-server';
+import jsonServer from "json-server";
+import {
+  getFromApi,
+  sendDeleteToApi,
+  sendPostToApi,
+  getPath,
+  getQuery,
+} from "./api-helper.js";
 
 const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
-const v1Router = jsonServer.router('v1.json');
+const v1Router = jsonServer.router("v1.json");
 
-const hydraRender = (req, res) => {
-  let { data } = res.locals;
-
-  // This modifies the response from /v1/slidesPlaylist to match /v1/playlists/:playlistId/slides
-  if (req.originalUrl.startsWith('/v1/slidesPlaylist?_expand=slide')) {
-    data = data.map((sp) => sp.slide);
-  }
-
-  // This modifies the response from /v1/slidesPlaylist to match /v1/slides/:slideId/playlists
-  if (req.originalUrl.startsWith('/v1/slidesPlaylist?_expand=playlist')) {
-    data = data.map((sp) => sp.playlist);
-  }
-
-  // This modifies the response from /v1/playlistScreenRegion to match /v1/screens/:screenId/regions/:regionId
-  if (req.originalUrl.startsWith('/v1/playlistScreenRegion?_expand=playlist')) {
-    data = data.map((psr) => psr.playlist);
-  }
-
-  // This modifies the response from /v1/playlistScreenRegion to match /v1/playlists/:playlistId/screens
-  if (req.originalUrl.startsWith('/v1/playlistScreenRegion?_expand=screen')) {
-    data = data.map((psr) => psr.screen);
-  }
-
+const addHydra = (data, path, query) => {
   if (Array.isArray(data)) {
-    const path = req.originalUrl;
+    // Custom pagination.
+    const { page = 1, itemsPerPage = 10 } = query;
+    const lastPage = Math.ceil(data.length / itemsPerPage);
+    const nextPage = page + 1;
 
-    res.jsonp({
-      '@id': path,
-      '@type': 'hydra:Collection',
-      'hydra:member': data,
-      'hydra:totalItems': data.length,
-      'hydra:view': {
-        '@id': `${path}`,
-        '@type': 'hydra:PartialCollectionView',
-        'hydra:first': `${path}`,
-        'hydra:last': `${path}`,
-        'hydra:next': `${path}`,
+    const currentItems = [];
+    for (
+      let i = (page - 1) * itemsPerPage;
+      i < Math.min(page * itemsPerPage, data.length);
+      i += 1
+    ) {
+      currentItems.push(data[i]);
+    }
+
+    const result = {
+      "@id": path,
+      "@type": "hydra:Collection",
+      "hydra:member": currentItems,
+      "hydra:totalItems": data.length,
+      "hydra:view": {
+        "@id": `${path}`,
+        "@type": "hydra:PartialCollectionView",
+        "hydra:first": `${path}?page=1`,
+        "hydra:last": `${path}?page=${lastPage}`,
       },
-    });
-  } else {
-    res.jsonp(data);
+    };
+
+    // Add next if this is not the last page.
+    if (lastPage > page) {
+      result["hydra:view"]["hydra:next"] = `${path}?page=${nextPage}`;
+    }
+
+    return result;
   }
+  return data;
 };
 
-server.use('/v1/slides/:slideId/playlists', (req, res) => {
-  getFromApi(`v1/slidesPlaylist?_expand=playlist&slideId=${req.params.slideId}`).then(
-    (data) => res.send(data)
-  ).catch((e) => res.send(e));
+const hydraRender = (req, res) => {
+  const { data } = res.locals;
+  let newData;
+
+  // This modifies the response from /v1/slidesPlaylist to match /v1/playlists/:playlistId/slides
+  if (req.originalUrl.startsWith("/v1/slidesPlaylist?_expand=slide")) {
+    newData = data.map((sp) => sp.slide);
+  }
+  // This modifies the response from /v1/slidesPlaylist to match /v1/slides/:slideId/playlists
+  else if (req.originalUrl.startsWith("/v1/slidesPlaylist?_expand=playlist")) {
+    newData = data.map((sp) => sp.playlist);
+  }
+  // This modifies the response from /v1/playlistScreenRegion to match /v1/screens/:screenId/regions/:regionId
+  else if (
+    req.originalUrl.startsWith("/v1/playlistScreenRegion?_expand=playlist")
+  ) {
+    newData = data.map((psr) => psr.playlist);
+  }
+  // This modifies the response from /v1/playlistScreenRegion to match /v1/playlists/:playlistId/screens
+  else if (
+    req.originalUrl.startsWith("/v1/playlistScreenRegion?_expand=screen")
+  ) {
+    newData = data.map((psr) => psr.screen);
+  }
+  // Not a custom request.
+  else {
+    newData = addHydra(data, getPath(req), getQuery(req));
+  }
+
+  res.jsonp(newData);
+};
+
+// Custom routes.
+
+server.get("/v1/slides/:slideId/playlists", (req, res) => {
+  const path = getPath(req);
+  getFromApi(
+    `/v1/slidesPlaylist?_expand=playlist&slideId=${req.params.slideId}`
+  )
+    .then((data) => {
+      const hydraData = addHydra(data, path, req.query);
+      res.send(hydraData);
+    })
+    .catch((e) => res.send(e));
 });
 
-server.use('/v1/playlists/:playlistId/slides', (req, res) => {
-  getFromApi(`v1/slidesPlaylist?_expand=slide&playlistId=${req.params.playlistId}`).then(
-    (data) => res.send(data)
-  ).catch((e) => res.send(e));
+server.get("/v1/playlists/:playlistId/slides", (req, res) => {
+  const path = getPath(req);
+  getFromApi(
+    `/v1/slidesPlaylist?_expand=slide&playlistId=${req.params.playlistId}`
+  )
+    .then((data) => {
+      const hydraData = addHydra(data, path, req.query);
+      res.send(hydraData);
+    })
+    .catch((e) => res.send(e));
 });
 
-server.use('/v1/playlists/:playlistId/screens', (req, res) => {
-  getFromApi(`/v1/playlistScreenRegion?_expand=screen&playlistId=${req.params.playlistId}`).then(
-    (data) => res.send(data)
-  ).catch((e) => res.send(e));
+server.get("/v1/playlists/:playlistId/screens", (req, res) => {
+  const path = getPath(req);
+  getFromApi(
+    `/v1/playlistScreenRegion?_expand=screen&playlistId=${req.params.playlistId}`
+  )
+    .then((data) => {
+      const hydraData = addHydra(data, path, req.query);
+      res.send(hydraData);
+    })
+    .catch((e) => res.send(e));
 });
 
-server.put('/v1/screens/:screenId/region/:regionId/playlists/:playlistId', (req, res) => {
+server.put(
+  "/v1/screens/:screenId/region/:regionId/playlists/:playlistId",
+  (req, res) => {
+    sendPostToApi("/v1/playlistScreenRegion/", {
+      playlistId: req.params.playlistId,
+      screenId: req.params.screenId,
+      region: req.params.regionId,
+    })
+      .then(() => {
+        res.send(201);
+      })
+      .catch((e) => res.send(e));
+  }
+);
+
+server.delete(
+  "/v1/screens/:screenId/region/:regionId/playlists/:playlistId",
+  (req, res) => {
+    getFromApi(
+      `/v1/playlistScreenRegion?screenId=${req.params.screenId}&region=${req.params.regionId}&playlistId=${req.params.playlistId}`
+    )
+      .then((data) => {
+        if (data["hydra:member"]?.length > 0) {
+          sendDeleteToApi(
+            `/v1/playlistScreenRegion/${data["hydra:member"][0].id}`
+          )
+            .then(res.send(204))
+            .catch((e) => res.send(e));
+        } else {
+          res.send(404);
+        }
+      })
+      .catch((e) => res.send(e));
+  }
+);
+
+server.get("/v1/screens/:screenId/region/:regionId/playlists", (req, res) => {
+  const path = getPath(req);
+  getFromApi(
+    `/v1/playlistScreenRegion?_expand=playlist&screenId=${req.params.screenId}&region=${req.params.regionId}`
+  )
+    .then((data) => {
+      const hydraData = addHydra(data, path, req.query);
+      res.send(hydraData);
+    })
+    .catch((e) => res.send(e));
+});
+
+server.put("/v1/playlists/:playlistId/slide/:slideId", (req, res) => {
   // @TODO: Avoid duplicates.
 
-  sendPostToApi('/v1/playlistScreenRegion/', {
-    playlistId: req.params.playlistId,
-    screenId: req.params.screenId,
-    region: req.params.regionId
-  }).then(() => {
-    res.send(201);
-  }).catch((e) => res.send(e));
-});
-
-server.delete('/v1/screens/:screenId/region/:regionId/playlists/:playlistId', (req, res) => {
-  getFromApi(`/v1/playlistScreenRegion?screenId=${req.params.screenId}&region=${req.params.regionId}&playlistId=${req.params.playlistId}`).then(
-    (data) => {
-      if (data['hydra:member']?.length > 0) {
-        sendDeleteToApi(`/v1/playlistScreenRegion/${data['hydra:member'][0].id}`).then(
-          res.send(204)
-        ).catch((e) => res.send(e));
-      }
-      else {
-        res.send(404);
-      }
-    }
-  ).catch((e) => res.send(e));
-});
-
-server.use('/v1/screens/:screenId/region/:regionId/playlists', (req, res) => {
-  getFromApi(`/v1/playlistScreenRegion?_expand=playlist&screenId=${req.params.screenId}&region=${req.params.regionId}`).then(
-    (data) => res.send(data)
-  ).catch((e) => res.send(e));
-});
-
-server.put('/v1/playlists/:playlistId/slide/:slideId', (req, res) => {
-  // @TODO: Avoid duplicates.
-
-  sendPostToApi('/v1/slidesPlaylist', {
+  sendPostToApi("/v1/slidesPlaylist", {
     playlistId: req.params.playlistId,
     slideId: req.params.slideId,
-  }).then(() => {
-    res.send(201);
-  }).catch((e) => res.send(e));
+  })
+    .then(() => {
+      res.send(201);
+    })
+    .catch((e) => res.send(e));
 });
 
-server.delete('/v1/playlists/:playlistId/slide/:slideId', (req, res) => {
-  getFromApi(`/v1/slidesPlaylist?playlistId=${req.params.playlistId}&slideId=${req.params.slideId}`).then(
-    (data) => {
-      if (data['hydra:member']?.length > 0) {
-        sendDeleteToApi(`/v1/slidesPlaylist/${data['hydra:member'][0].id}`).then(
-          res.send(204)
-        ).catch((e) => res.send(e));
-      }
-      else {
+server.delete("/v1/playlists/:playlistId/slide/:slideId", (req, res) => {
+  getFromApi(
+    `/v1/slidesPlaylist?playlistId=${req.params.playlistId}&slideId=${req.params.slideId}`
+  )
+    .then((data) => {
+      if (data.length > 0) {
+        sendDeleteToApi(`/v1/slidesPlaylist/${data[0].id}`)
+          .then(res.send(204))
+          .catch((e) => res.send(e));
+      } else {
         res.send(404);
       }
-    }
-  ).catch((e) => res.send(e));
+    })
+    .catch((e) => res.send(e));
 });
 
-async function getFromApi(path) {
-  const response = await fetch(`http://nginx/api/${path}`);
-  return await response.json();
-}
-
-async function sendPostToApi(path, data) {
-  const response = await fetch(`http://nginx/api/${path}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  });
-  return await response.json();
-}
-
-async function sendPutToApi(path) {
-  const response = await fetch(`http://nginx/api/${path}`, {
-    method: 'PUT'
-  });
-  return await response.json();
-}
-
-async function sendDeleteToApi(path) {
-  const response = await fetch(`http://nginx/api/${path}`, {
-    method: 'DELETE'
-  });
-  return await response.json();
-}
-
 v1Router.render = hydraRender;
-
 server.use(middlewares);
-server.use('/v1', v1Router);
+server.use("/v1", v1Router);
 
 server.listen(3000, () => {});
