@@ -27,6 +27,9 @@ const addHydra = (data, path, query) => {
       currentItems.push(data[i]);
     }
 
+    const itemsPerPageQuery =
+      itemsPerPage !== 10 ? `&itemsPerPage=${itemsPerPage}` : "";
+
     const result = {
       "@id": path,
       "@type": "hydra:Collection",
@@ -35,14 +38,16 @@ const addHydra = (data, path, query) => {
       "hydra:view": {
         "@id": `${path}`,
         "@type": "hydra:PartialCollectionView",
-        "hydra:first": `${path}?page=1`,
-        "hydra:last": `${path}?page=${lastPage}`,
+        "hydra:first": `${path}?page=1${itemsPerPageQuery}`,
+        "hydra:last": `${path}?page=${lastPage}${itemsPerPageQuery}`,
       },
     };
 
     // Add next if this is not the last page.
     if (lastPage > page) {
-      result["hydra:view"]["hydra:next"] = `${path}?page=${nextPage}`;
+      result["hydra:view"][
+        "hydra:next"
+      ] = `${path}?page=${nextPage}${itemsPerPageQuery}`;
     }
 
     return result;
