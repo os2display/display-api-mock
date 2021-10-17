@@ -2484,7 +2484,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/book-review.bundle.js",
+        "component": "/templates_build/book-review.js",
         "assets": [
           {
             "type": "css",
@@ -2511,7 +2511,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/calendar.bundle.js",
+        "component": "/templates_build/calendar.js",
         "assets": [
           {
             "type": "css",
@@ -2538,7 +2538,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/image-text.bundle.js",
+        "component": "/templates_build/image-text.js",
         "assets": [
           {
             "type": "css",
@@ -2565,7 +2565,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/meeting-room-schedule.bundle.js",
+        "component": "/templates_build/meeting-room-schedule.js",
         "assets": [
           {
             "type": "css",
@@ -2592,7 +2592,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/poster.bundle.js",
+        "component": "/templates_build/poster.js",
         "assets": [
           {
             "type": "css",
@@ -2619,7 +2619,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/quote.bundle.js",
+        "component": "/templates_build/quote.js",
         "assets": [
           {
             "type": "css",
@@ -2646,7 +2646,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/rss.bundle.js",
+        "component": "/templates_build/rss.js",
         "assets": [
           {
             "type": "css",
@@ -2673,7 +2673,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/slideshow.bundle.js",
+        "component": "/templates_build/slideshow.js",
         "assets": [
           {
             "type": "css",
@@ -2700,7 +2700,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/sparkle.bundle.js",
+        "component": "/templates_build/sparkle.js",
         "assets": [
           {
             "type": "css",
@@ -2727,7 +2727,7 @@
       "resources": {
         "admin": "http://templates.itkdev.dk/image/form.json",
         "schema": "http://templates.itkdev.dk/image/schema.json",
-        "component": "/templates_build/contacts.bundle.js",
+        "component": "/templates_build/contacts.js",
         "assets": [
           {
             "type": "css",
