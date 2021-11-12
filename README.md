@@ -2,6 +2,10 @@
 
 Api mock for OS2Display based on json-server: https://github.com/typicode/json-server.
 
+## :warning:  Repo Archived nov. 2021 !
+
+_Switched to using the real api with fixtures data in a docker container_
+
 ## Setup
 
 ```
